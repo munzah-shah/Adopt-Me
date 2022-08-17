@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Pet(props) {
 
-    let hero = "http://pet-images.dev-apis.com/pets/none.jpg"
+    let hero = "https://pet-images.dev-apis.com/pets/none.jpg"
 
     if(props.images.length) {
         hero = props.images[0]
