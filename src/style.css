@@ -23,6 +23,7 @@
     margin: 0px 25px 5rem 0px;
     padding: 35px 15px 15px 15px;
     float: left;
+    overflow-x: auto;
   }
 
   .search-params div {
@@ -328,6 +329,16 @@
   }
   
   @media only screen and (max-width: 600px) {
+    
+    .search-params {
+      width: 80%;
+    }
+    .search-params form select,
+    .search-params form input {
+      width: 65vw;
+      font-size: 0.8rem;
+    }
+
     .pet {
       height: 200px;
     }
