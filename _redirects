@@ -1,5 +1,1 @@
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server/:splat"
-  status = 200
-  force = true
+/api/* http://endpoint.com/api/:splat 200!
