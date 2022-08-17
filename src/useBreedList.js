@@ -21,7 +21,7 @@ export default function useBreedList(animal) {
         async function requestBreedList() {
             setBreedList([])
             setStatus("loading")
-            const res = await fetch(`http://pets-v2.dev-apis.com/breeds?animal=${animal}`)
+            const res = await fetch(`https://pets-v2.dev-apis.com/breeds?animal=${animal}`)
             const data = await res.json()
 
             localCache[animal] = data.breeds || [];
