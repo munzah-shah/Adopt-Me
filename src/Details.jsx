@@ -12,7 +12,7 @@ class Details extends Component {
     state = { loading: true, showModal: false}
 
     async componentDidMount() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`)
+        const res = await fetch(`https://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`)
         const data = await res.json()
 
         this.setState(Object.assign(
