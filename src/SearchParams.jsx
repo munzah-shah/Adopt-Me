@@ -20,7 +20,7 @@ export default function SearchParams() {
     }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     async function requestPets() {
-        const res = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`)
+        const res = await fetch(`https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`)
         const data = await res.json()
 
         setPets(data.pets)
